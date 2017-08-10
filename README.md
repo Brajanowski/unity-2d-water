@@ -1,15 +1,15 @@
 # Unity 2D Water
 
 # Usage:
-It's require a 2 cameras setup.
+It requires setup consisting of 2 cameras.
 
-1. Create a second camera and parent to main camera.
+1. Create a second camera and parent it to the main camera.
 
 ![Screenshot](ss/0.png)
 
-**IMPORTANT**: Second camera must have same settings for orthographic projection like main camera have.
+**IMPORTANT**: Second camera must have same settings for orthographic projection as the main camera.
 
-2. Attach script called ScreenSpaceWaterReflections to second camera
+2. Attach script called ScreenSpaceWaterReflections to second camera.
 
 ![Screenshot](ss/1.png)
 
