@@ -10,12 +10,12 @@ public class Water : MonoBehaviour {
   Camera _camera = null;
   float offset = 0;
 
-	void Start () {
-		_renderer = GetComponent<Renderer>();
+  void Start () {
+    _renderer = GetComponent<Renderer>();
     _camera = Camera.main;
-	}
+  }
 	
-	void Update () {
+  void Update () {
     offset += Time.deltaTime * scrollSpeed;
     if (offset > 1.0f)
       offset -= 1.0f;
@@ -24,6 +24,6 @@ public class Water : MonoBehaviour {
     float topEdge = minScreenSpaceY / (float)_camera.pixelHeight;
 
     _renderer.sharedMaterial.SetFloat("_TopEdgePosition", topEdge);
-		_renderer.sharedMaterial.SetTextureOffset("_Displacement", new Vector2(offset, 0));
-	}
+    _renderer.sharedMaterial.SetTextureOffset("_Displacement", new Vector2(offset, 0));
+  }
 }

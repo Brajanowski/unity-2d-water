@@ -1,4 +1,4 @@
-﻿Shader "Custom/Water" {
+Shader "Custom/Water" {
   Properties {
     _Tint("Tint", Color) = (1, 1, 1, 1)
     _Displacement("Displacement", 2D) = "defaulttexture"
